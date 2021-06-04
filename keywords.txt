@@ -1,0 +1,25 @@
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+RP2040_PIO_Charlieplexing	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+charlieplexing5_can_add_program	KEYWORD2
+charlieplexing5_add_program	KEYWORD2
+charlieplexing5_program_init	KEYWORD2
+charlieplexing5_set_output	KEYWORD2
+charlieplexing5_set_output_2	KEYWORD2
+
+charlieplexing6_can_add_program	KEYWORD2
+charlieplexing6_add_program	KEYWORD2
+charlieplexing6_program_init	KEYWORD2
+charlieplexing6_set_output	KEYWORD2
+
+#######################################
+# Constants (LITERAL1)
+#######################################
+

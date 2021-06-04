@@ -1,0 +1,19 @@
+.program charlieplexing6
+
+
+ .wrap_target
+    pull noblock       ; Pull from FIFO to OSR if available, else copy X to OSR
+    mov x, osr         ; Copy most-recently-pulled value back to scratch X
+mainloop:
+    out pindirs, 3     ; Set pin directions
+    out pins, 3   [31] ; Set pin output values
+    set y, 31     [31] ; Load Y register for first wait loop
+wait1:
+    jmp y-- wait1 [31] ; First wait loop : 31 * 32 cycles
+    out pins, 3   [31] ; Set pin output values
+    set y, 31     [31] ; Load Y register for second wait loop
+wait2:
+    jmp y-- wait2 [31] ; Second wait loop : 31 * 32 cycles
+    set pins, 0        ; Switch off any led
+    jmp !osre mainloop ; if OSRE not null, handle next led
+ .wrap                 ; Implicit jump to the first instruction
