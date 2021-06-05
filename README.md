@@ -4,7 +4,7 @@ An Arduino RP2040 Charlieplexing library using PIO.
 
 > See the PDF documentation in the `extras` directory.
  
-From [https://en.wikipedia.org/wiki/Charlieplexing](): *Charlieplexing is a technique for driving a multiplexed display in which relatively few I/O pins on a microcontroller are used e.g. to drive an array of LEDs*.
+From [https://en.wikipedia.org/wiki/Charlieplexing](https://en.wikipedia.org/wiki/Charlieplexing): *Charlieplexing is a technique for driving a multiplexed display in which relatively few I/O pins on a microcontroller are used e.g. to drive an array of LEDs*.
 
 Very often, an interrupt routine is used to periodically refresh the leds. The PIOs built into the RP2040 microcontroller allow this refresh to be performed automatically, without processor intervention. 
 
