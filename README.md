@@ -28,7 +28,7 @@ The `5-leds-6-leds-charlieplexing` sketch shows how a two state machines of a sa
 ### Connections
 The following figure shows how to connect the six leds to the RP2040. The value of the R resistors depends on the brightness you want to achieve; typically 150 Ω or 220 Ω is used.
 
-![](/extras/connection-6-leds.pdf)
+![](./extras/connection-6-leds.pdf)
  
 ### `6-leds-charlieplexing.ino` Sample Sketch
  
